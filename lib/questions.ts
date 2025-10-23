@@ -33,7 +33,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 3,
-    text: "The event "Startuplab Summit" is scheduled for which day?",
+    text: "The event 'Startuplab Summit' is scheduled for which day?",
     options: [
       { letter: 'A', text: "Monday" },
       { letter: 'B', text: "Tuesday" },
@@ -44,7 +44,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 4,
-    text: "What is the time slot for "Getting Even More Impact Bang for your Buck"?",
+    text: "What is the time slot for 'Getting Even More Impact Bang for your Buck'?",
     options: [
       { letter: 'A', text: "Thursday 8:30–11:00" },
       { letter: 'B', text: "Wednesday 8:30–11:00" },
@@ -55,7 +55,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 5,
-    text: "Which organization is not listed as organiser for "Unleashed – a Corporate Innovation Summit"?",
+    text: "Which organization is not listed as organiser for 'Unleashed – a Corporate Innovation Summit'?",
     options: [
       { letter: 'A', text: "Reodor Studios AS" },
       { letter: 'B', text: "Eldorado" },
@@ -66,7 +66,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 6,
-    text: "What is the title of the "Afterparty" event on Thursday?",
+    text: "What is the title of the 'Afterparty' event on Thursday?",
     options: [
       { letter: 'A', text: "Official After Party" },
       { letter: 'B', text: "Venture Karaoke Night" },
@@ -99,7 +99,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 9,
-    text: "Which location is listed for "MeetingPoint: student innovators meets humanitarian organisations…"?",
+    text: "Which location is listed for 'MeetingPoint: student innovators meets humanitarian organisations...'?",
     options: [
       { letter: 'A', text: "Punkt Oslo" },
       { letter: 'B', text: "Mesh Youngstorget" },
@@ -110,7 +110,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 10,
-    text: ""Who Owns the Algorithm? AI, Corporate Power & Human Rights" is held on which day/time?",
+    text: "'Who Owns the Algorithm? AI, Corporate Power & Human Rights' is held on which day/time?",
     options: [
       { letter: 'A', text: "Wednesday 16:30–18:30" },
       { letter: 'B', text: "Thursday 16:30–18:30" },
