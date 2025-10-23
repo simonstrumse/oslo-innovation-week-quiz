@@ -23,6 +23,14 @@ export default function HostGamePage({ params }: { params: Promise<{ pin: string
   const [channel, setChannel] = useState<RealtimeChannel | null>(null);
   const [answeredCount, setAnsweredCount] = useState(0);
   const [timerKey, setTimerKey] = useState(0);
+  const [playUrl, setPlayUrl] = useState('');
+
+  useEffect(() => {
+    // Get the current URL for displaying to players
+    if (typeof window !== 'undefined') {
+      setPlayUrl(`${window.location.host}/play`);
+    }
+  }, []);
 
   useEffect(() => {
     loadSession();
@@ -220,12 +228,15 @@ export default function HostGamePage({ params }: { params: Promise<{ pin: string
           >
             <div className="text-center mb-12">
               <h1 className="text-6xl font-black text-white mb-4">JOIN AT:</h1>
-              <div className="text-white text-2xl mb-4">Play at: <span className="font-mono">quiz.yoursite.com/play</span></div>
+              <div className="text-white text-2xl mb-4">
+                Go to: <span className="font-mono bg-white bg-opacity-20 px-4 py-2 rounded-lg">{playUrl || 'Loading...'}</span>
+              </div>
               <div className="bg-white rounded-3xl p-12 inline-block shadow-2xl">
                 <div className="text-8xl font-black bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent tracking-wider">
                   {pin}
                 </div>
               </div>
+              <p className="text-white text-lg mt-6">Enter this PIN to join the game</p>
             </div>
 
             <PlayerList players={players} />
