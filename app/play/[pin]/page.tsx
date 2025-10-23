@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState, use } from 'react';
+
+export const dynamic = 'force-dynamic';
 import { supabase, Player, GameSession } from '@/lib/supabase';
 import { QUESTIONS, QUESTION_TIME_LIMIT, BASE_POINTS, SPEED_BONUS_MAX } from '@/lib/questions';
 import AnswerButton from '@/components/AnswerButton';

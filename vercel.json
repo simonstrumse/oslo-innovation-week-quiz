@@ -1,0 +1,6 @@
+{
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://jpglqbgrnymqounqhbcq.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpwZ2xxYmdybnltcW91bnFoYmNxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjEyMTgzMjksImV4cCI6MjA3Njc5NDMyOX0.dsvjsO-TGL-zTQks_J8cVRLCUpwL1hWN9NLNagi6UOk"
+  }
+}
