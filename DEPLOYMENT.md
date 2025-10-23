@@ -22,12 +22,18 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzd
 1. Push this repository to GitHub
 2. Go to [Vercel Dashboard](https://vercel.com/new)
 3. Import your GitHub repository
-4. Add the environment variables:
-   - Go to **Project Settings** → **Environment Variables**
-   - Add `NEXT_PUBLIC_SUPABASE_URL` with the value above
-   - Add `NEXT_PUBLIC_SUPABASE_ANON_KEY` with the value above
-   - Make sure to add them for **Production**, **Preview**, and **Development**
+4. **⚠️ CRITICAL: Add Environment Variables BEFORE deploying**:
+   - In the import screen, expand **Environment Variables** section
+   - Add `NEXT_PUBLIC_SUPABASE_URL` = `https://jpglqbgrnymqounqhbcq.supabase.co`
+   - Add `NEXT_PUBLIC_SUPABASE_ANON_KEY` = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpwZ2xxYmdybnltcW91bnFoYmNxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjEyMTgzMjksImV4cCI6MjA3Njc5NDMyOX0.dsvjsO-TGL-zTQks_J8cVRLCUpwL1hWN9NLNagi6UOk`
+   - ✅ Check **Production**, **Preview**, AND **Development** environments
 5. Deploy!
+
+**If you already deployed without env vars:**
+1. Go to your Vercel project → **Settings** → **Environment Variables**
+2. Add both variables for all three environments (Production, Preview, Development)
+3. Go to **Deployments** tab
+4. Click the 3 dots on latest deployment → **Redeploy**
 
 ### Option 2: Deploy via CLI
 
